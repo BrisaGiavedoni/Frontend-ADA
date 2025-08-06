@@ -1,0 +1,41 @@
+<!--03 - Artículo
+index.html debe tener:
+
+un título h1 con un tamaño de letra más grande y una tipografía distinta de la que viene por defecto. Poner un título cualquiera (o aleatorio).
+un texto que diga: Publicado por @adalovelace hace 3 días. @adalovelace debe ser un link (que no lleve a ningún). El texto debe tener un color gris mientras que el link un color celeste. El link no debe tener subrayado. El texto debe tener la misma tipografía que los siguientes párrafos.
+4 párrafos p con lorem ipsum y una tipografía distinta a la del título:
+El primer párrafo debe tener una oración en itálica.
+El segundo párrafo debe tener una oración en negrita.
+El tercer párrafo debe estar completamente en itálica y tener una tipografía distinta a la de los párrafos.
+El cuarto párrafo debe tener 2 palabras en negrita y 2 palabras en itálica.-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Mi artículo</h1>
+
+    <p class="texto-articulo">
+    Publicado por <a href="#">@adalovelace</a> hace 3 días.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="oración1">Suscipit, iusto harum culpa at aut porro minus pariatur?</span> In nemo fugiat voluptate culpa, doloribus doloremque iure, omnis accusantium id ut commodi ducimus, amet soluta. Asperiores repudiandae aliquam ducimus vero debitis, sint aperiam est, maiores cumque harum non omnis! Doloribus, obcaecati ipsum.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span id="oración2">Blanditiis maxime repellendus</span> nisi, ut illo a doloribus deleniti ex modi iusto eaque libero recusandae quidem mollitia expedita obcaecati et odio magnam vitae corporis, fugit porro dolorem. Eveniet suscipit nemo placeat quia tempore, odit voluptatibus molestiae blanditiis unde modi quidem mollitia nobis quis, est qui in sequi, dolor soluta? Labore, harum eaque.</p>
+
+    <p id="párrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam impedit quaerat ipsa voluptatem id consectetur ipsam perspiciatis similique voluptate et.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repellat cum quibusdam tempore iusto asperiores itaque quae laboriosam distinctio iste atque minima iure labore deserunt unde vel hic ullam fugit? <span id="palabras1">Vitae incidunt</span> quos repellat corporis <span id="palabras2">error similique</span> praesentium, laborum sunt, accusamus enim ratione tempora odio!</p>
+
+
+</body>
+</html>

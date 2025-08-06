@@ -1,0 +1,35 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 50px;
+}
+
+.texto-articulo {
+  color: gray;
+  font-size: 16px;
+}
+
+.texto-articulo a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+
+#oración1, #párrafo3 , #palabras1 {
+  font-style: italic;
+  font-family:'Segoe UI', sans-serif
+}
+
+#oración2 , #palabras2 {
+  font-weight: bold;
+}
+
+#párrafo3 {
+  font-family: 'Space Mono';
+}
+
