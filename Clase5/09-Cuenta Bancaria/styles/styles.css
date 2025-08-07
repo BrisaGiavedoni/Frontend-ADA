@@ -1,0 +1,30 @@
+body{
+    font-family: "Libertinus Sans" , sans-serif;
+}
+
+h1 {
+  font-size: 3rem; 
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.fecha {
+  font-size: 0.875rem;
+  color:gray; 
+}
+
+.ingreso {
+  color: green;
+  font-weight: bold;
+}
+
+.egreso {
+  color: red;
+  font-weight: bold;
+}

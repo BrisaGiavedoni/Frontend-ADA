@@ -1,0 +1,32 @@
+body {
+  font-family: 'Rubik', sans-serif;
+
+}
+ 
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.productos {
+font-size: 0.75rem;
+color: #333333;
+}
+
+.imagen-principal img {
+width: 800px;
+height: 300px;}
+
+.producto img{
+    width: 200px;
+    height: 200px;
+}
+
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 14px;
+}
