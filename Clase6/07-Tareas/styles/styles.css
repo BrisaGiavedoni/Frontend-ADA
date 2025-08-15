@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right top, #23c7b2, #00a6b0, #0084a3, #00628d, #14426d);
+  font-family: "Libertinus Sans", sans-serif;
+  margin: 0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.tablero {
+  width: 100%;
+  max-width: 480px;
+}
+
+.lista {
+  background-image: linear-gradient(to right top, #534439, #41332e, #2d2422, #1a1516, #000000);
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.titulo-tablero {
+  color: #aca6a2;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.titulo-lista {
+  color: #aca6a2;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.tarjeta {
+  background-image: linear-gradient(to right top, #534439, #493c33, #3e332e, #332c28, #292422);
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+  color: #d4cec9;
+  line-height: 1.4;
+}
+
+.agregar-tarjeta {
+  color: #aca6a2;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+.agregar-tarjeta:hover {
+  text-decoration: underline;
+}

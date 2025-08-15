@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left top, #e9e2d8, #e9d9bf, #e7d0a7, #e4c78e, #e0bf75);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tarjeta {
+  width: 90%;
+  max-width: 400px;
+  margin: 5rem auto;
+  background-color: #001524;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.tarjeta-superior {
+  background-image: linear-gradient(to left top, #e9e2d8, #e6ccb0, #e6b58b, #e69b6c, #e77f52);
+  padding: 2rem 1rem 0;
+}
+
+.tarjeta-superior img {
+  width: 200px;
+  height: auto;
+  margin-top: -3rem;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.tarjeta-superior img:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-inferior {
+  padding: 2rem 1.5rem;
+}
+
+.tarjeta-inferior h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.etiquetas {
+  margin-bottom: 1.5rem;
+}
+
+.etiquetas span {
+  border: 1px solid #7D64AEAE;
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
+  margin: 0 0.3rem;
+  font-size: 0.8rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.tarjeta-inferior h3 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.tarjeta-inferior p {
+  font-size: 0.95rem;
+  color: #dcdcdc;
+}
+
+.precio {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+
+button {
+  background-color:  #7d64ae;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(to left top, #e9e2d8, #e0beb0, #d7989e, #bb77a1, #7d64ae);
+}

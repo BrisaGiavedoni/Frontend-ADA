@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background-color: #e3e7f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #B12A04;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.container {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 0 60px rgba(32, 38, 46, 0.2);
+  width: 600px;
+  padding: 60px 50px;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+  font-size: 28px;
+  color: #B12A04;
+}
+
+p, span {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #B12A04;
+  margin: 20px 0 30px 0;
+}
+
+.recuperar-email {
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.recuperar-email strong {
+  font-size: 22px;
+}
+
+.recuperar-email p {
+  font-size: 20px;
+}
+
+.btn-actualizar {
+  background-image: linear-gradient(to right top, #371005, #592016, #7e3022, #a5422f, #cd553c);
+  border: none;
+  box-shadow: 0 0 8px #c0d2ff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+
+.btn-actualizar:hover {
+  background-image: linear-gradient(to right top, #b12a04, #b83615, #c04023, #c64b30, #cd553c);
+}
+
+.btn-confirm {
+  background-image: linear-gradient(to right top, #371005, #592016, #7e3022, #a5422f, #cd553c);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 35px;
+}
+
+.btn-confirm:hover {
+  background-image: linear-gradient(to right top, #b12a04, #b83615, #c04023, #c64b30, #cd553c);
+}

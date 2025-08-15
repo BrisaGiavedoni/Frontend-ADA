@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(to right top, #051937, #002537, #022e30, #21342b, #363930);
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #c00ea2;
+  font-size: 1.75rem;
+}
+
+.barra-progreso-container {
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+.barra-progreso {
+  width: 600px;
+  height: 2.5rem;
+  background-color: #e2c6c6;
+  border-radius: 100px;
+  padding: 0.15rem;
+  margin: 1.5rem auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  background-color: #c00ea2;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 1rem;
+  transition: width 0.5s ease-in-out;
+}

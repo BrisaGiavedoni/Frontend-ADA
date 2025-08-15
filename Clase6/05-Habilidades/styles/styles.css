@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(to right top, #5594f4, #4f77c3, #445b95, #364169, #252941);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    font-size: 16px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.tarjeta {
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.encabezado h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.boton-ver-todo {
+    background: #6f00ff;
+    color: #eee;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1rem;
+    transition: background-image 0.3s ease;
+}
+
+.boton-ver-todo:hover {
+    background-image: linear-gradient(to right top, #af55f4, #9e49ea, #8c3ee0, #7a32d7, #6727cd);
+}
+
+.curso1, .curso2, .curso3 {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.barra-color {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.rosa  {
+    background-image: linear-gradient(to right top, #f66bde, #ec5cd4, #e24dcb, #d73cc1, #cd27b8);
+}
+
+div.curso1:hover {
+    background-image: linear-gradient(to right top, #f66bde, #ec5cd4, #e24dcb, #d73cc1, #cd27b8);
+}
+
+.morado {
+    background-image: linear-gradient(to right top, #621178, #652279, #682e79, #6b3a7a, #6e447a);
+}
+
+div.curso2:hover {
+    background-image: linear-gradient(to right top, #621178, #652279, #682e79, #6b3a7a, #6e447a);
+}
+
+.naranja {
+    background-image: linear-gradient(to right top, #ff4d00, #ff5d00, #ff6c04, #ff790c, #ff8516);
+}
+
+div.curso3:hover {
+    background-image: linear-gradient(to right top, #ff4d00, #ff5d00, #ff6c04, #ff790c, #ff8516);
+}
+
+.info-curso h3 {
+    font-size: 1.5rem;
+}
+
+.info-curso p {
+    font-size: 1.2rem;
+}

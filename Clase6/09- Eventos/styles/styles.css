@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(to left top, #c667cf, #a356b3, #814596, #62357a, #45255e);
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.filtros {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filtro {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #666;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filtro.activo {
+    background-color: #491955;
+    color: white;
+}
+
+.evento {
+    margin-bottom: 2rem;
+}
+
+.cabecera-evento {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.estado.cancelado {
+    color: #d01f5b;
+    margin-right: 0.5rem;
+}
+
+.titulo-evento {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion-evento {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.ver-mas {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ver-mas:hover {
+    color: #d01f5b;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+}

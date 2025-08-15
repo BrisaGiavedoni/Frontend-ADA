@@ -1,0 +1,74 @@
+body {
+  background-image: linear-gradient(to right top, #ffffff, #ebd6e2, #e0aeac, #bc906a, #777e38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.caja-donacion {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 40rem;
+  max-width: 90%;
+}
+
+.mensaje {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.opciones-monto button {
+  margin: 0.5rem;
+  padding: 0.8rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  font-family: 'Space Mono', monospace;
+}
+
+.opciones-monto button:hover {
+  color: white;
+  background-image: linear-gradient(to right top, #ee4563, #e6356a, #dd2572, #d2157a, #c40482);
+}
+
+.opciones-monto button.seleccionado {
+  background-color: #7c5dfa;
+  color: white;
+  border: 1px solid #7c5dfa;
+}
+
+.boton-continuar {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.75rem;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(to right top, #ee4563, #e6356a, #dd2572, #d2157a, #c40482);
+  transition: background-color 0.3s ease;
+  font-family: 'Space Mono', monospace;
+}
+
+.boton-continuar:hover {
+  background-image: linear-gradient(to right top, #af2b42, #9e2147, #8b1b49, #77184a, #621648);
+}
