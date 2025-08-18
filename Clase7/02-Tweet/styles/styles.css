@@ -1,0 +1,72 @@
+  body {
+    margin: 0;
+    background-image: linear-gradient(to right top, #051937, #002a46, #003b51, #004c57, #105c59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  .tweet-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/4202/4202850.png');
+  background-size: cover;
+  background-position: center;
+  margin-right: 12px;
+}
+  .user-info {
+    font-size: 14px;
+  }
+  .user-info strong {
+    font-weight: 700;
+  }
+  .user-info span {
+    color: gray;
+    margin-left: 6px;
+  }
+  .tweet-text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 12px;
+  }
+  .stats {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+  }
+  .stats strong {
+    font-weight: 700;
+    color: #051937;
+  }
+
+  .actions {
+  display: flex;
+  }
+
+  .actions span {
+  cursor: pointer;
+  color: #051937;
+  margin-right: 15px;
+  }

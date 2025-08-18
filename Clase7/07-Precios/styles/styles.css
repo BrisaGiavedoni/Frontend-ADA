@@ -1,0 +1,93 @@
+  body {
+    background-color: #2f2f2f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p.subtitulo {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+
+  .contenedor-precios {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+  }
+
+  .tarjeta-precio {
+    background-color: #3c3c3c;
+    border-radius: 8px;
+    border: 1px solid #555;
+    padding: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tarjeta-precio h2 {
+    margin: 0 0 15px;
+  }
+
+  .precio {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .precio small {
+    font-size: 18px;
+    vertical-align: top;
+  }
+
+  .descripcion {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbb;
+  }
+
+  ul.beneficios {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  ul.beneficios li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    font-size: 15px;
+  }
+
+  ul.beneficios li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5fdb7d;
+  }
+
+  button.boton-elegir {
+    background-color: #ccc;
+    color: #0073aa;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  button.boton-elegir:hover {
+    background-color: #0073aa;
+    color: #ccc;
+  }

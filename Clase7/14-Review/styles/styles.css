@@ -1,0 +1,93 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f5fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #222b45;
+      margin-bottom: 15px;
+    }
+
+    .rating-summary {
+      background-color: #d7f2f7;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 20px;
+      padding: 8px 16px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #1a9ba3;
+    }
+
+    .stars {
+      color: #49c4c0;
+      font-size: 20px;
+    }
+
+    .ratings-count {
+      color: #8f9bb3;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .rating-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #00628b;
+    }
+
+    .rating-bar .label {
+      width: 70px;
+      text-align: right;
+      margin-right: 12px;
+      font-weight: 600;
+    }
+
+    .bar-container {
+      background-color: #d7f2f7;
+      flex-grow: 1;
+      height: 14px;
+      border-radius: 8px;
+      margin-right: 12px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background-color: #49c4c0;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .percentage {
+      width: 30px;
+      text-align: left;
+      font-weight: 600;
+      color: #222b45;
+    }
+
+    .info-link {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #1a9ba3;
+      cursor: pointer;
+      text-decoration: underline;
+      border: none;
+      background: none;
+    }

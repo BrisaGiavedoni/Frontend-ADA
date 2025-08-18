@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f8fc; /* fondo casi blanco con un toque lila */
+  color: #5d3f9f; /* color principal del texto */
+}
+
+/* Sección principal */
+.servicios {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.servicios h2 {
+  color: #5d3f9f; /* título principal */
+}
+
+.subtitulo {
+  color: #9e8acb; /* subtítulo más suave */
+  margin-bottom: 40px;
+}
+
+/* Contenedor de servicios */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Tarjeta de servicio */
+.servicio {
+  display: flex;
+  width: 500px;
+  margin: 20px;
+  text-align: left;
+}
+
+/* Ícono con fondo */
+.icono {
+  background-color: #e1d5f5; 
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* Imagen dentro del icono */
+.icono img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Título del servicio */
+.servicio h3 {
+  margin: 0 0 10px 0;
+  color: #5d3f9f; 
+}
+
+/* Párrafos */
+.servicio p {
+  color: #866dbb; 
+  margin: 0;
+}

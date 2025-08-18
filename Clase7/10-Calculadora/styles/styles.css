@@ -1,0 +1,89 @@
+ * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #e6e0f8; /* lila claro */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculadora {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 8px 20px rgba(106, 90, 205, 0.3);
+      width: 260px;
+    }
+    input {
+      width: 100%;
+      height: 50px;
+      font-size: 24px;
+      text-align: right;
+      padding: 0 12px;
+      margin-bottom: 16px;
+      border: 2px solid #9b59b6;
+      border-radius: 8px;
+      outline: none;
+      color: #4b0082;
+      background-color: #f4eaff;
+      user-select: text;
+    }
+    input:focus {
+      border-color: #6a5acd;
+      box-shadow: 0 0 8px #6a5acd;
+      background-color: #e9dfff;
+    }
+    .botones {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    button {
+      height: 48px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      color: white;
+      user-select: none;
+    }
+    button.numero {
+      background-color: #9b59b6; /* lila */
+      box-shadow: 0 4px 6px #7e3f98;
+    }
+    button.numero:hover {
+      background-color: #8e44ad;
+      box-shadow: 0 5px 9px #6d3786;
+    }
+    button.operacion {
+      background-color: #7d3c98; /* más oscuro */
+      box-shadow: 0 4px 6px #5c2a6c;
+    }
+    button.operacion:hover {
+      background-color: #6c3384;
+      box-shadow: 0 5px 9px #4d2564;
+    }
+    button.clear {
+      background-color: #bb8fce; /* lila claro */
+      color: #4b0082;
+      box-shadow: 0 4px 6px #8e64a9;
+      font-weight: 700;
+    }
+    button.clear:hover {
+      background-color: #a676c7;
+      box-shadow: 0 5px 9px #7a57a4;
+    }
+    button.igual {
+      background-color: #5e2a82; /* lila muy oscuro */
+      box-shadow: 0 4px 6px #3c1b53;
+      font-weight: 700;
+    }
+    button.igual:hover {
+      background-color: #4a2167;
+      box-shadow: 0 5px 9px #301a4a;
+    }
