@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left top, #e9e2d8, #e9d9bf, #e7d0a7, #e4c78e, #e0bf75);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-attachment: fixed;
+}
+
+.tarjeta {
+  max-width: 800px;
+  width: 90%;
+  margin: 5rem auto;
+  background-color: #001524;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  text-align: left;
+  color: white;
+}
+
+.tarjeta-superior {
+  flex: 1 1 40%;
+  background-image: linear-gradient(to left top, #e9e2d8, #e6ccb0, #e6b58b, #e69b6c, #e77f52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.tarjeta-superior img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-superior img:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-inferior {
+  flex: 1 1 60%;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarjeta-inferior h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.etiquetas {
+  margin-bottom: 1.5rem;
+}
+
+.etiquetas span {
+  border: 1px solid #7D64AEAE;
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
+  margin: 0 0.3rem 0.3rem 0;
+  font-size: 0.8rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.tarjeta-inferior h3 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.tarjeta-inferior p {
+  font-size: 0.95rem;
+  color: #dcdcdc;
+}
+
+.precio {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #7d64ae;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-image: linear-gradient(to left top, #e9e2d8, #e0beb0, #d7989e, #bb77a1, #7d64ae);
+}
+
+
+@media (max-width: 600px) {
+  .tarjeta {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
+  .tarjeta-superior {
+    flex: none;
+    padding: 1.5rem;
+  }
+
+  .tarjeta-superior img {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .tarjeta-inferior {
+    flex: none;
+    padding: 1.5rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .tarjeta-inferior h2 {
+    font-size: 1.5rem;
+  }
+
+  .etiquetas {
+    text-align: center;
+  }
+
+  .etiquetas span {
+    margin: 0.2rem 0.3rem 0.3rem 0.3rem;
+  }
+
+  button {
+    align-self: center;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
