@@ -1,0 +1,35 @@
+body {
+font-size: 1rem;
+line-height: 1.6;
+margin: 0;
+font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+color: #222;
+background: #f6f7fb;
+display: flex;
+justify-content: center;
+}
+
+section { margin-bottom: 1.75rem; }
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 0.6rem; }
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.5rem; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.25rem; }
+p { font-size: 1rem; margin: 0 0 1rem; }
+
+
+.container {
+max-width: 42rem;
+padding: 2rem 1.25rem;
+background: #fff;
+border-radius: 1rem;
+box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.06);
+display: flex;
+flex-direction: column;
+}
+
+
+@media (min-width: 48rem) {
+body { font-size: 1.125rem; }
+.container { padding: 2.5rem 2rem; }
+}
