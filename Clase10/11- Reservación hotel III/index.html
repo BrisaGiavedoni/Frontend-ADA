@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación III</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="reservation-container">
+
+    <div class="reservation-form">
+      <h2>NEW QUICK RESERVATION</h2>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Adults</label>
+          <select>
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Children</label>
+          <select>
+            <option selected>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Rate Type</label>
+          <select>
+            <option selected>Rack Rate</option>
+            <option>Promo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Rooms</label>
+          <select>
+            <option>1</option>
+            <option selected>2</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Title</label>
+          <select>
+            <option>Mr.</option>
+            <option selected>Ms.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" value="Garrett">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" value="Watson">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter Phone Number">
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="resType"> Single</label>
+        <label class="radio-option"><input type="radio" name="resType" checked> Group</label>
+        <label class="radio-option"><input type="radio" name="resType"> Business</label>
+      </div>
+
+      <div class="buttons">
+        <button>Temp Reserve</button>
+        <button>Reserve</button>
+        <button>Check-In</button>
+      </div>
+    </div>
+
+
+    <div class="summary-section">
+      <p><span class="label">Room Type:</span> Deluxe</p>
+      <p><span class="label">Duration:</span> May 28 - Jun 2</p>
+      <p><span class="label">Price:</span> $45/night | Total $270</p>
+    </div>
+  </div>
+</body>
+</html>

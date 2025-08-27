@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('https://images.pexels.com/photos/373576/pexels-photo-373576.jpeg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-bar {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  gap: 20px;
+  width: 900px;
+  max-width: 95vw;
+}
+
+.reservation-bar > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 20px;
+  border-right: 1px solid #d4af37; /* dorado suave */
+}
+
+.reservation-bar > div:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.reservation-bar label {
+  font-size: 16px;
+  font-weight: 700; /* más grueso */
+  color: #b8860b; /* tono dorado más oscuro y cálido */
+  margin-bottom: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservation-bar input[type="text"],
+.reservation-bar input[type="date"],
+.reservation-bar input[type="number"] {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600; /* más negrita */
+  color: #555;
+  width: 130px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservation-bar input::placeholder {
+  color: #a67c00; /* placeholder dorado claro */
+}
+
+.reservation-bar input[type="number"] {
+  width: 60px;
+}
+
+.reservation-bar button {
+  background-color: #b8860b; /* dorado oscuro */
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservation-bar button:hover {
+  background-color: #996d00; /* dorado más oscuro */
+}

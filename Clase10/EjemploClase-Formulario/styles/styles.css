@@ -1,0 +1,30 @@
+#form-style{
+    border-radius: 1rem;
+    padding: 1.25rem 1rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #8b1212;
+    overflow: hidden;
+}
+
+.botoncito:active{
+    transform: scale(0.98);
+}
+
+input:focus{
+    background-color: tomato;
+}
+
+#form-style:target {
+    background-color: lightblue;
+}
+
+#email:valid{
+    border: 2px solid green;
+}
+
+#email:invalid{
+    border: 2px solid red;
+}

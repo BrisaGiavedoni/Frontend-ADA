@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="form-container">
+    <h2>Formulario de registro</h2>
+    <form>
+      <div class="row">
+        <div style="flex: 1;">
+          <label>Nombre</label>
+          <input type="text" name="nombre">
+        </div>
+        <div style="flex: 1;">
+          <label>Apellido</label>
+          <input type="text" name="apellido">
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="flex: 1;">
+          <label>DNI</label>
+          <input type="text" name="dni">
+        </div>
+        <div style="flex: 2;">
+          <label>Email</label>
+          <input type="email" name="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="flex: 1;">
+          <label>Contraseña</label>
+          <input type="password" name="password">
+        </div>
+        <div style="flex: 1;">
+          <label>Repetir contraseña</label>
+          <input type="password" name="confirm-password">
+        </div>
+      </div>
+
+      <small>* La contraseña debe tener como mínimo 8 caracteres y como máximo 16</small>
+
+      <div class="form-footer">
+        <label>
+          <input type="checkbox" name="terms"> Aceptar términos y condiciones
+        </label>
+        <button type="submit">Registrarse</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
