@@ -313,35 +313,25 @@ footer span {
 
 
 @media (max-width: 480px) {
-  .hero-texto h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-texto p {
-    font-size: 0.9rem;
-  }
-
-  .btn-hero {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .producto {
-    width: 90%;
-  }
-
-  .contacto form {
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  .form-btns {
+  .header-main {
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
   }
 
-  .btn-reset,
-  .btn-enviar {
+  .header-main nav ul {
+    flex-direction: column;
     width: 100%;
+    gap: 0.5rem;
+  }
+
+  .header-main nav ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  .idioma-moneda {
+    font-size: 0.75rem;
+    margin-right: 1rem;
   }
 }
