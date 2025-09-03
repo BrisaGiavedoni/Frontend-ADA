@@ -1,0 +1,72 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1.25rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+
+  /* Escalar todo el grid */
+  transform: scale(1.5);
+  transform-origin: top center;
+}
+
+.container {
+  width: 6.25rem; /* 100px */
+  height: 6.25rem;
+  background: lightgray;
+  position: relative;
+}
+
+.red {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem;
+  background: red;
+  position: absolute;
+}
+
+.green {
+  width: 1.875rem; /* 30px */
+  height: 1.875rem;
+  background: green;
+  position: absolute;
+}
+
+/* Cuadro 1 */
+.uno .red { top: 0; left: 0; }
+.uno .green { bottom: 0; right: 0; }
+
+/* Cuadro 2 */
+.dos .red { bottom: 0; left: 0; }
+.dos .green { top: 0; right: 0; }
+
+/* Cuadro 3 */
+.tres .red { bottom: 0; right: 0; }
+.tres .green { top: 0; right: 0; }
+
+/* Cuadro 4 */
+.cuatro .red { bottom: 0; left: 0; }
+.cuatro .green { bottom: 0; left: 30px; }
+
+/* Cuadro 5 */
+.cinco .red { top: 0; right: 0; }
+.cinco .green { top: 30px; right: 30px; }
+
+/* Cuadro 6 */
+.seis .red { bottom: 0; right: 0; }
+.seis .green { bottom: 30px; right: 0; }
+
+/* Cuadro 7 */
+.siete .red {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.siete .green { bottom: 0; left: 0; }
+
+/* Cuadro 8 */
+.ocho .red { bottom: 0; left: 20px; }
+.ocho .green { bottom: 0; left: 35px; }
+
+/* Cuadro 9 */
+.nueve .red { top: 20px; left: 20px; }
+.nueve .green { top: 35px; left: 35px; }

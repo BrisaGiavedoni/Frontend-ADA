@@ -1,0 +1,26 @@
+#online-counter {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+      color: #000;
+      user-select: none;
+    }
+
+    #online-counter .dot {
+      width: 14px;
+      height: 14px;
+      background-color: #3c7732; /* verde similar */
+      border-radius: 50%;
+      flex-shrink: 0;
+      box-shadow: 0 0 6px #3c7732;
+    }

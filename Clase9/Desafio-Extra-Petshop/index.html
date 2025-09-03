@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Petshop</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 <body>
-
-  
   <header class="header-top">
     <div class="promo">Grandes ofertas en comederos</div>
     <div class="idioma-moneda">
       <span>Español</span> | <span>ARG$</span>
     </div>
     <div class="header-main">
-      <img src="./images/LogoCabecera.png" alt="Logo Front Cat&Dog" class="logo">
+      <img src="./images/LogoCabecera.png" alt="Logo Front Cat&Dog" class="logo" />
       <nav>
         <ul>
-          <li><a href="#">Categorías</a></li>
-          <li><a href="#">Pets</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#"><img src="./images/huellaChica.png" alt="Huella" class="huella-chica" /> Categorías</a></li>
+          <li><a href="#"><img src="./images/huellaChica.png" alt="Huella" class="huella-chica" /> Pets</a></li>
+          <li><a href="#"><img src="./images/huellaChica.png" alt="Huella" class="huella-chica" /> Nosotros</a></li>
+          <li><a href="#"><img src="./images/huellaChica.png" alt="Huella" class="huella-chica" /> Contáctanos</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-   
     <section class="hero">
-     <div class="hero-texto">
-    <h2>¡Es un placer tenerte aquí!</h2>
-    <p>¡Comederos en descuento!</p>
-    <a href="#" class="btn-hero">COMEDEROS</a>
-    </div>
+      <div class="hero-texto">
+        <h2>¡Es un placer tenerte aquí!</h2>
+        <p>¡Comederos en descuento!</p>
+        <a href="#" class="btn-hero">COMEDEROS</a>
+      </div>
     </section>
- 
-    
-    <section class="productos">
-      <h3>Productos Destacados</h3>
 
+    <section class="productos">
+      <h3>
+        <img src="./images/huellaGrande.png" alt="Huella grande" class="huella-grande" />
+        Productos Destacados
+      </h3>
+
+      
+      <input type="radio" name="filtro" id="filtro-comederos" checked />
+      <input type="radio" name="filtro" id="filtro-accesorios" />
+      <input type="radio" name="filtro" id="filtro-comida" />
+
+      
       <div class="filtros">
-        <button>Comederos</button>
-        <button>Accesorios</button>
-        <button>Comida</button>
+        <label for="filtro-comederos" class="btn-filtro">Comederos</label>
+        <label for="filtro-accesorios" class="btn-filtro">Accesorios</label>
+        <label for="filtro-comida" class="btn-filtro">Comida</label>
       </div>
 
       <div class="producto-lista">
-        <div class="producto">
-          <img src="./images/churrasquito.png" alt="Juguete Churrasquito">
-          <p>Juguete Churrasquito</p>
-          <strong>$150</strong>
+        
+        <div class="categoria comederos">
+          <div class="producto">
+            <img src="./images/comedero.png" alt="Comedero para perro" />
+            <p>Comedero para perro</p>
+            <strong>$250</strong>
+          </div>
         </div>
 
-        <div class="producto">
-          <img src="./images/comedero.png" alt="Comedero para perro">
-          <p>Comedero para perro</p>
-          <strong>$250</strong>
+        
+        <div class="categoria accesorios">
+          <div class="producto">
+            <img src="./images/churrasquito.png" alt="Juguete Churrasquito" />
+            <p>Juguete Churrasquito</p>
+            <strong>$150</strong>
+          </div>
+          <div class="producto">
+            <img src="./images/Huesito.png" alt="Juguete Huesito" />
+            <p>Juguete Huesito</p>
+            <strong>$650</strong>
+          </div>
         </div>
 
-        <div class="producto">
-          <img src="./images/Huesito.png" alt="Juguete Huesito">
-          <p>Juguete Huesito</p>
-          <strong>$650</strong>
+        
+        <div class="categoria comida">
+          <div class="producto">
+            <img src="./images/comida-perro.png" alt="Comida para perro" />
+            <p>Comida para perro</p>
+            <strong>$350</strong>
+          </div>
+          <div class="producto">
+            <img src="./images/comida-complete-gato.png" alt="Comida para gato" />
+            <p>Comida para gato</p>
+            <strong>$370</strong>
+          </div>
         </div>
       </div>
     </section>
 
-    
     <section class="contacto">
       <h3>Contáctanos</h3>
       <form>
-        <input type="text" placeholder="Nombre y Apellido">
-        <input type="email" placeholder="Ingresa tu correo electrónico">
-        <input type="tel" placeholder="Teléfono">
+        <input type="text" placeholder="Nombre y Apellido" />
+        <input type="email" placeholder="Ingresa tu correo electrónico" />
+        <input type="tel" placeholder="Teléfono" />
 
         <div class="form-btns">
           <button type="reset" class="btn-reset">Resetear</button>
@@ -84,11 +107,10 @@
       </form>
     </section>
 
-    
     <section class="newsletter">
       <div class="suscripcion">
         <span>📧 Suscríbete para más novedades</span>
-        <input type="email" placeholder="Ingresa tu correo electrónico">
+        <input type="email" placeholder="Ingresa tu correo electrónico" />
         <button>Suscribirme</button>
       </div>
 
@@ -100,10 +122,11 @@
     </section>
   </main>
 
-  
   <footer>
-    <p>🐶🐱 Front Cat&Dog 🐱🐶</p>
-    <span>Todos los derechos reservados Front End</span>
+    <div class="footer-contenido">
+      <img src="./images/LogoCabecera.png" alt="Logo Cats & Dogs" class="logo-footer" />
+      <span>© 2025 Cats & Dogs - Todos los derechos reservados.</span>
+    </div>
   </footer>
 </body>
 </html>
