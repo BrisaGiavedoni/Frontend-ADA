@@ -5,10 +5,11 @@
 }
 
 body {
-  background-image: linear-gradient(to right top, #05370f, #133d16, #1e441d, #284a24, #32512b);
+  background-image: url("https://images.pexels.com/photos/72509/pexels-photo-72509.jpeg");
   font-family: 'Cedarville Cursive', cursive, sans-serif;
   padding: 40px;
   text-align: center;
+  background-attachment:fixed;
 }
 
 h1 {
