@@ -1,0 +1,121 @@
+#btns-3 {
+  background-color: #2ac56c;
+  padding: 4vh 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 150px;
+}
+
+.btn-click-style1, .btn-click-style2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #17aa56;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  padding: 0;
+  overflow: visible;
+  z-index: 0;
+  transform-origin: center;
+}
+
+.btn-click-style1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #2e7d32;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.btn-click-style1:active::before {
+  width: 100%;
+}
+
+.btn-click-style1:hover, .btn-click-style2:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+
+.btn-click-style1:active, .btn-click-style2:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-click-style1 img, .btn-click-style2 img {
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  display: flex;
+  justify-self: center;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+/* Corazón con pseudo-elementos */
+.btn-click-style2::before,
+.btn-click-style2::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 32px;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center; /* Ajustado */
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s ease, transform 0.2s ease, filter 0.3s ease;
+  z-index: -1;
+}
+
+/* Parte izquierda del corazón */
+.btn-click-style2::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Parte derecha del corazón */
+.btn-click-style2::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Al hacer clic: escala el botón entero y colorea el corazón */
+.btn-click-style2:active {
+  transform: scale(1.3) translateY(2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-click-style2:active::before,
+.btn-click-style2:active::after {
+  background-color: #e53935;
+  filter: drop-shadow(0 0 8px rgba(229, 57, 53, 0.7));
+  transform: rotate(var(--rotate)); /* Sin escala ni translate */
+}
+
+.btn-click-style2:active::before {
+  --rotate: -45deg;
+}
+
+.btn-click-style2:active::after {
+  --rotate: 45deg;
+}
+
+.btn-click-style2:active img {
+  transform: scale(1.3);
+  background-color: #e53935;
+  filter: drop-shadow(0 0 5px #e53935);
+}

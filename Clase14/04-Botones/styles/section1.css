@@ -1,0 +1,136 @@
+#btns-1 {
+  background-color: #fcd04b;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ======== BOTÓN ADD TO CART ======== */
+.btn-addtocart {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 0 0.3rem 0.3rem 0; /* redondeo solo en lados derechos */
+  cursor: pointer;
+  overflow: hidden;
+  height: 3.5rem;
+  width: 16rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.05s ease;
+  background-color: #f8a910;
+  padding-left: 0; /* sin padding izquierdo */
+  outline: none; /* quita borde foco */
+  box-shadow: none; /* quita sombra */
+}
+
+.btn-addtocart .icon {
+  background-color: #e6970a;
+  width: 3.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin: 0; /* sin margen */
+  padding: 0; /* sin padding */
+  border: none; /* sin borde */
+  outline: none; /* sin outline */
+}
+
+.btn-addtocart .icon img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.btn-addtocart .text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn-addtocart:hover {
+  background-color: #e6970a;
+}
+
+.btn-addtocart:hover .icon {
+  background-color: #d87d00;
+}
+
+.btn-addtocart:active {
+  background-color: #ec7300;
+  transform: translateY(2px);
+}
+
+.btn-addtocart:active .icon {
+  background-color: #c45d00;
+}
+
+/* ======== BOTÓN SETTINGS ======== */
+.btn-settings {
+  display: inline-flex;
+  align-items: center;
+  background: #f39200;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  user-select: none;
+  width: 14rem;
+  height: 3.5rem;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 0;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.btn-settings .icon {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 100%;
+  clip-path: polygon(0 0, calc(100% - 0.8rem) 0, 100% 50%, calc(100% - 0.8rem) 100%, 0 100%);
+  transition: transform 0.3s ease;
+}
+
+.btn-settings .icon img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+  filter: invert(48%) sepia(74%) saturate(470%) hue-rotate(30deg) brightness(94%) contrast(90%);
+}
+
+.btn-settings .text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+.btn-settings:hover {
+  background-color: #e38200;
+}
+
+.btn-settings:active .icon {
+  transform: scaleX(1.5);
+}
+
+.btn-settings:active .text {
+  margin-left: 1.2rem;
+}

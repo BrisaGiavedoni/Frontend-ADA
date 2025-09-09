@@ -1,0 +1,38 @@
+@import url("section1.css");
+@import url("section2.css");
+@import url("section3.css");
+@import url("section4.css");
+
+html, body {
+  height: 100%;   
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+section {
+  width: 100vw;
+  height: 100vh; 
+  padding: 5vh 4vw;
+  box-sizing: border-box;
+}
+
+/* === ESTILO BASE DE TODOS LOS BOTONES === */
+.btn {
+  font-size: 1.2rem;
+  padding: 1.2vh 2.5vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 1.5vh 1vw;
+  position: relative;
+  overflow: hidden;
+}

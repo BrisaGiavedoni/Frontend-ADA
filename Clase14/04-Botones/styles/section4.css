@@ -1,0 +1,75 @@
+#btns-4 {
+  background-color: #0f88d0; 
+  padding: 4vh 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn4-style1,
+.btn4-style2 {
+  position: relative;
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: color 0.7s ease;
+  z-index: 0;
+}
+
+
+.btn4-style1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  z-index: -1;
+  transition: height 0.7s ease;
+  transform: translateY(-50%);
+}
+
+.btn4-style1:hover::before {
+  height: 100%;
+}
+
+.btn4-style1:hover {
+  color: #0f88d0;
+}
+
+
+.btn4-style2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 200%;
+  background-color: #fff;
+  z-index: -1;
+  transition: width 0.7s ease;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+}
+
+.btn4-style2:hover::before {
+  width: 150%;
+}
+
+.btn4-style2:hover {
+  color: #0f88d0;
+}

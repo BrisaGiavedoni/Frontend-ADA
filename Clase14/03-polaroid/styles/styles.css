@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right top, #05370f, #133d16, #1e441d, #284a24, #32512b);
+  font-family: 'Cedarville Cursive', cursive, sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+/* Galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Polaroid (figure) */
+.polaroid {
+  background: white;
+  padding: 10px 10px 30px;
+  width: 200px;
+  height: 280px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.polaroid:hover {
+  transform: rotate(3deg) scale(1.2);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+/* Imagen */
+.polaroid img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+  border-radius: 2px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Pie de foto (figcaption) */
+.polaroid figcaption {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  user-select: none;
+}
+
+/* Rotaciones */
+.rotate-left {
+  transform: rotate(-5deg);
+}
+
+.rotate-right {
+  transform: rotate(5deg);
+}
+
+/* Al hacer hover, rotación neutra */
+.polaroid:hover.rotate-left,
+.polaroid:hover.rotate-right {
+  transform: scale(1.2) rotate(0deg);
+  z-index: 10;
+}
