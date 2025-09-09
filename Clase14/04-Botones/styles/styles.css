@@ -3,14 +3,13 @@
 @import url("section3.css");
 @import url("section4.css");
 
-html, body {
-  height: 100%;   
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
@@ -19,10 +18,10 @@ body {
 section {
   width: 100vw;
   height: 100vh; 
-  padding: 5vh 4vw;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /* === ESTILO BASE DE TODOS LOS BOTONES === */
 .btn {
   font-size: 1.2rem;

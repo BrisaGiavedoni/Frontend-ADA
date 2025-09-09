@@ -1,10 +1,15 @@
 #btns-1 {
   background-color: #fcd04b;
-  padding: 5vh 0;
+  height: 25vh;            
+  min-height: 9rem;       
   display: flex;
   justify-content: center;
+  align-items: center;    
   gap: 2rem;
   flex-wrap: wrap;
+  padding: 0 1rem;         
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* ======== BOTÓN ADD TO CART ======== */
