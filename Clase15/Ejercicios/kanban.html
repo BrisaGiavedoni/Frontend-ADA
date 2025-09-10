@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+</head>
+<body>
+    <main class="tasks">
+    <section class="tasks__section" aria-labelledby="tasks-title">
+      <h2 id="tasks-title" class="tasks__title">In progress</h2>
+
+      <ul class="tasks__list">
+        <li class="task-card">
+          <article aria-labelledby="task1-title" class="task-card__content">
+            <figure class="task-card__logo-figure">
+              <img src="uber-logo.png" alt="Uber logo" class="task-card__logo" />
+            </figure>
+
+            <header class="task-card__header">
+              <strong class="task-card__priority task-card__priority--high" aria-label="High priority">High</strong>
+              <time datetime="2017-12-18" class="task-card__date">18 Dec. 2017</time>
+            </header>
+
+            <h3 id="task1-title" class="task-card__title">Prepare structural documentation</h3>
+
+            <ul class="task-card__tags" aria-label="Tags">
+              <li><span class="task-card__tag">Development</span></li>
+              <li><span class="task-card__tag">Architecture</span></li>
+            </ul>
+
+            <footer class="task-card__info">
+              <p><span aria-label="Number of people working">3 people work on this</span></p>
+              <p><span aria-label="Number of comments">17 comments</span></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="task-card">
+          <article aria-labelledby="task2-title" class="task-card__content">
+            <figure class="task-card__logo-figure">
+              <img src="bosch-logo.png" alt="Bosch logo" class="task-card__logo" />
+            </figure>
+
+            <header class="task-card__header">
+              <strong class="task-card__priority task-card__priority--medium" aria-label="Medium priority">Medium</strong>
+              <time datetime="2017-12-18" class="task-card__date">18 Dec. 2017</time>
+            </header>
+
+            <h3 id="task2-title" class="task-card__title">Update requirements list</h3>
+
+            <ul class="task-card__tags" aria-label="Tags">
+              <li><span class="task-card__tag">Development</span></li>
+              <li><span class="task-card__tag">Management</span></li>
+            </ul>
+
+            <footer class="task-card__info">
+              <p><span aria-label="Number of people working">2 people work on this</span></p>
+              <p><span aria-label="Number of comments">8 comments</span></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="task-card">
+          <article aria-labelledby="task3-title" class="task-card__content">
+            <figure class="task-card__logo-figure">
+              <img src="bosch-logo.png" alt="Bosch logo" class="task-card__logo" />
+            </figure>
+
+            <header class="task-card__header">
+              <strong class="task-card__priority task-card__priority--low" aria-label="Low priority">Low</strong>
+              <time datetime="2017-12-18" class="task-card__date">18 Dec. 2017</time>
+            </header>
+
+            <h3 id="task3-title" class="task-card__title">New UI for dashboard</h3>
+
+            <ul class="task-card__tags" aria-label="Tags">
+              <li><span class="task-card__tag">Development</span></li>
+              <li><span class="task-card__tag">Architecture</span></li>
+            </ul>
+
+            <footer class="task-card__info">
+              <p><span aria-label="Number of people working">7 people work on this</span></p>
+              <p><span aria-label="Number of comments">7 comments</span></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="task-card">
+          <article aria-labelledby="task4-title" class="task-card__content">
+            <figure class="task-card__logo-figure">
+              <img src="adidas-logo.png" alt="Adidas logo" class="task-card__logo" />
+            </figure>
+
+            <header class="task-card__header">
+              <strong class="task-card__priority task-card__priority--low" aria-label="Low priority">Low</strong>
+              <time datetime="2017-12-18" class="task-card__date">18 Dec. 2017</time>
+            </header>
+
+            <h3 id="task4-title" class="task-card__title">Initial landing page concepts</h3>
+
+            <ul class="task-card__tags" aria-label="Tags">
+              <li><span class="task-card__tag">Development</span></li>
+              <li><span class="task-card__tag">Architecture</span></li>
+            </ul>
+
+            <footer class="task-card__info">
+              <p><span aria-label="Number of people working">4 people work on this</span></p>
+              <p><span aria-label="Number of comments">2 comments</span></p>
+            </footer>
+          </article>
+        </li>
+      </ul>
+
+      <button class="tasks__add-button" type="button" aria-label="Add new card">
+        + Add new card
+      </button>
+    </section>
+  </main>
+
+    
+</body>
+</html>

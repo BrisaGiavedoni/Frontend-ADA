@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page II</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FineOak - Diseño de Interiores</title>
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <header class="site-header">
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portafolio</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de bienvenida -->
+  <section id="inicio" class="hero-section">
+    <h1 class="hero-title">Bienvenido a FineOak</h1>
+    <p class="hero-subtitle">Transformamos espacios con estilo y confort.</p>
+    <a href="#servicios" class="btn btn-primary hero-cta">Descubre nuestros servicios</a>
+  </section>
+
+  <!-- Servicios ofrecidos -->
+  <section id="servicios" class="services-section">
+    <h2 class="section-title">Servicios</h2>
+    <article class="service-item">
+      <h3 class="service-title">Diseño de Interiores</h3>
+      <p class="service-description">Creación de ambientes funcionales y estéticamente agradables.</p>
+    </article>
+    <article class="service-item">
+      <h3 class="service-title">Renovaciones</h3>
+      <p class="service-description">Actualización y mejora de espacios existentes.</p>
+    </article>
+    <article class="service-item">
+      <h3 class="service-title">Consultoría</h3>
+      <p class="service-description">Asesoramiento experto en diseño y planificación de espacios.</p>
+    </article>
+  </section>
+
+  <!-- Galería de proyectos -->
+  <section id="portfolio" class="portfolio-section">
+    <h2 class="section-title">Portafolio</h2>
+    <article class="portfolio-item">
+      <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio-image" />
+      <p class="portfolio-description">Proyecto de oficina moderna</p>
+    </article>
+    <article class="portfolio-item">
+      <img src="proyecto2.jpg" alt="Proyecto 2" class="portfolio-image" />
+      <p class="portfolio-description">Renovación de sala de estar</p>
+    </article>
+    <article class="portfolio-item">
+      <img src="proyecto3.jpg" alt="Proyecto 3" class="portfolio-image" />
+      <p class="portfolio-description">Diseño de cocina abierta</p>
+    </article>
+  </section>
+
+  <!-- Sección de testimonios -->
+  <section class="testimonials-section">
+    <h2 class="section-title">Testimonios</h2>
+    <blockquote class="testimonial">
+      <p class="testimonial-text">"El equipo de FineOak transformó nuestra oficina en un espacio inspirador y funcional."</p>
+      <footer class="testimonial-author">- Cliente Satisfecho</footer>
+    </blockquote>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="contact-section">
+    <h2 class="section-title">Contacto</h2>
+    <form action="enviar_formulario.php" method="post" class="contact-form">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required class="form-input" />
+
+      <label for="email" class="form-label">Correo Electrónico</label>
+      <input type="email" id="email" name="email" required class="form-input" />
+
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" required class="form-textarea"></textarea>
+
+      <button type="submit" class="btn btn-submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p class="footer-text">&copy; 2025 FineOak. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

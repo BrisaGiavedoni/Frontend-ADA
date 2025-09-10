@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header class="site-header">
+  <nav class="main-nav">
+    <ul class="nav-menu">
+      <li class="nav-menu__item"><a href="#" class="nav-menu__link">Inicio</a></li>
+      <li class="nav-menu__item"><a href="#about" class="nav-menu__link">Sobre Nosotros</a></li>
+      <li class="nav-menu__item"><a href="#services" class="nav-menu__link">Servicios</a></li>
+      <li class="nav-menu__item"><a href="#portfolio" class="nav-menu__link">Portafolio</a></li>
+      <li class="nav-menu__item"><a href="#contact" class="nav-menu__link">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1 class="hero__title">Construye algo creativo</h1>
+    <p class="hero__subtitle">Un punto de partida moderno para tu proyecto.</p>
+    <a href="#about" class="btn btn--primary hero__btn">Saber más</a>
+  </section>
+
+  <section class="about" id="about">
+    <header class="about__header">
+      <h2 class="about__title">Sobre Nosotros</h2>
+      <p class="about__subtitle">Conoce más sobre nuestro equipo y misión.</p>
+    </header>
+    <p class="about__description">
+      Somos un grupo de creativos dedicados a diseñar y desarrollar proyectos innovadores.
+    </p>
+  </section>
+
+  <section class="services" id="services">
+    <header class="services__header">
+      <h2 class="services__title">Servicios</h2>
+    </header>
+    <ul class="services__list">
+      <li class="service">
+        <h3 class="service__title">Diseño Web</h3>
+        <p class="service__description">Desarrollamos sitios web atractivos y funcionales.</p>
+      </li>
+      <li class="service">
+        <h3 class="service__title">Desarrollo de Apps</h3>
+        <p class="service__description">Aplicaciones móviles personalizadas para todas las plataformas.</p>
+      </li>
+      <li class="service">
+        <h3 class="service__title">Consultoría</h3>
+        <p class="service__description">Asesoramiento profesional para tu negocio digital.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <header class="portfolio__header">
+      <h2 class="portfolio__title">Portafolio</h2>
+    </header>
+    <ul class="portfolio__list">
+      <li class="portfolio__item">
+        <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio__image" />
+        <h3 class="portfolio__project-title">Proyecto 1</h3>
+      </li>
+      <li class="portfolio__item">
+        <img src="proyecto2.jpg" alt="Proyecto 2" class="portfolio__image" />
+        <h3 class="portfolio__project-title">Proyecto 2</h3>
+      </li>
+      <li class="portfolio__item">
+        <img src="proyecto3.jpg" alt="Proyecto 3" class="portfolio__image" />
+        <h3 class="portfolio__project-title">Proyecto 3</h3>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <header class="contact__header">
+      <h2 class="contact__title">Contacto</h2>
+    </header>
+    <form action="#" method="post" class="contact-form">
+      <label for="nombre" class="contact-form__label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required class="contact-form__input" />
+      
+      <label for="email" class="contact-form__label">Correo Electrónico</label>
+      <input type="email" id="email" name="email" required class="contact-form__input" />
+      
+      <label for="mensaje" class="contact-form__label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" required class="contact-form__textarea"></textarea>
+      
+      <button type="submit" class="btn btn--submit contact-form__button">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__copyright">&copy; 2025 Creative. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
